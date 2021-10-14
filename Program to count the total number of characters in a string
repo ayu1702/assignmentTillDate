@@ -1,4 +1,4 @@
-public class Main{
+public class TotalCharacters{
     public static void main(String ar[]){
         
         String str="The best of both worlds";
