@@ -2,7 +2,7 @@ package addmul;
 
 import java.util.HashMap;
 
-public class Punctuation{
+public class Frequencies {
     public static void main(String ar[]){
         
         String str="aaabbbcccddeeeffffksacd";
