@@ -1,0 +1,30 @@
+import java.util.HashMap;
+
+public class HashMap{
+    public static void main(String ar[]){
+        
+        String str="Tit for tat is a proverb";
+        str=str.toLowerCase();
+        
+        HashMap <Integer , String> dataMap=new HashMap<>();
+        
+//        key- 1  value-sanjay
+//        key- 2  value- ashutosh
+//        key- 3  value- nipun
+//        key- 4  value- rabish
+//        key- 5  value- akanksha
+        
+        dataMap.put(1, "sanjay");
+        dataMap.put(2, "ashutosh");
+        dataMap.put(3, "nipun");
+        dataMap.put(4, "rabish");
+        dataMap.put(5, "akanksha");
+        
+        for(HashMap.Entry<Integer,String> entry:dataMap.entrySet()) {
+        System.out.println("Key = " + entry.getKey() +
+                ", Value = " + entry.getValue());
+
+        }
+    }
+}
+
