@@ -1,0 +1,24 @@
+public class PunctuationCharacters{
+    public static void main(String ar[]){
+        
+        String str="He said, 'The mailman loves you.' I heard it with my own ears.";
+        str=str.toLowerCase();
+        int punctuationCharacters=0;
+        for(int i=0;i<str.length();i++)
+        {
+            if(str.charAt(i)>='a'&& str.charAt(i)<='z')
+            {
+                continue;
+            }
+            else if(str.charAt(i)==' '){
+                continue;    
+            }
+            else{
+                punctuationCharacters++;
+            }
+        }
+        System.out.println("Punctuation Characters = "+punctuationCharacters);
+        
+    }
+}
+
