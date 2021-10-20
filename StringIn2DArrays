@@ -1,0 +1,38 @@
+package com.java.sept21;
+
+import java.util.Scanner;
+
+public class StringInTDArrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+int i,j;
+		
+		Scanner sc=new Scanner(System.in);
+		
+//		System.out.println("Enter no of rows (m) : ");
+//		m=sc.nextInt();
+//		
+//		System.out.println("Enter no of columns (n) : ");
+//		n=sc.nextInt();
+		
+		String names[][]=new String[3][3];
+		
+		System.out.println("Enter the elements of array : ");
+		for(i=0;i<3;i++)                   //rows
+			for(j=0;j<3;j++)               //column
+				names[i][j]=sc.next();    //2-d array
+		
+		System.out.println("Elements of array are : ");
+		for(i=0;i<3;i++)     {              //rows
+			for(j=0;j<3;j++)     {
+				System.out.print(names[i][j]+" ");
+			}
+			System.out.println();		
+		}
+		
+
+	}
+
+}
